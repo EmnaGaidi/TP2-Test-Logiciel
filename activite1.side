@@ -1,0 +1,84 @@
+{
+  "id": "19bcfa78-ddb5-4b82-8c42-d2821d54e904",
+  "version": "2.0",
+  "name": "travail_a_rendre",
+  "url": "https://safatelli.github.io/tp-test-logiciel/assets/hello.html",
+  "tests": [{
+    "id": "7c324955-b23f-4a70-9192-e2238c6f690b",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "c35d24ce-1d1f-406f-9a99-e5aa070dc1a8",
+    "name": "test1",
+    "commands": [{
+      "id": "1a2e2caf-0d76-4f5e-8f8b-9fde63a9b29a",
+      "comment": "",
+      "command": "open",
+      "target": "https://safatelli.github.io/tp-test-logiciel/assets/hello.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce6bb6cc-d8fe-4959-851f-cc85844e746d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dd3d8e9-d41b-45cb-89f4-be787061db58",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7050f32-cb03-4ead-95ff-1af61bdbbb9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Emna"
+    }, {
+      "id": "22d6c86f-2924-4353-9b8c-3ec3270d9b30",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='afficherBonjour()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Bonjour')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "451d81ad-503c-4cf4-a857-5a283ec9a9bf",
+      "comment": "verification",
+      "command": "assertText",
+      "target": "id=message",
+      "targets": [],
+      "value": "Bonjour, Emna !"
+    }]
+  }],
+  "suites": [{
+    "id": "2d7addb5-266d-401b-8f9d-cff128ede78b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7c324955-b23f-4a70-9192-e2238c6f690b"]
+  }],
+  "urls": ["https://safatelli.github.io/tp-test-logiciel/assets/hello.html"],
+  "plugins": []
+}

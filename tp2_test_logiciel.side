@@ -1,0 +1,129 @@
+{
+  "id": "0e887171-af6a-43e0-ac40-072d49585681",
+  "version": "2.0",
+  "name": "tp2_test_logiciel",
+  "url": "https://insat.rnu.tn/",
+  "tests": [{
+    "id": "1148ed02-7b90-440d-b90e-bd747d3eb53e",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "512beaac-7154-4582-8099-cc9646297e54",
+    "name": "first_test",
+    "commands": [{
+      "id": "faa80d6e-44fe-49c2-b23f-11cbfc185fd8",
+      "comment": "",
+      "command": "open",
+      "target": "https://insat.rnu.tn/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11f89efb-9d77-4b1a-8a73-919c9a4e2618",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11b28036-0897-485c-8a5e-2cefd38144ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cursor-pointer:nth-child(2) > .mr-3 > .text-center",
+      "targets": [
+        ["css=.cursor-pointer:nth-child(2) > .mr-3 > .text-center", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/nav/ul/li[2]/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/nav/ul/li[2]/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cd1d6b7-655d-4b59-957b-c8753b4f0283",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LES FILIÈRES",
+      "targets": [
+        ["linkText=LES FILIÈRES", "linkText"],
+        ["css=.navbar_dropdown__5o9yI > .px-8:nth-child(4)", "css:finder"],
+        ["xpath=(//a[contains(text(),'LES FILIÈRES')])[2]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/div[2]/nav/ul/li[2]/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/formations/les-filieres')])[2]", "xpath:href"],
+        ["xpath=//div[2]/nav/ul/li[2]/div/div/a[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3e0bf97-6b37-422f-bf34-afd8f157be62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.blue-background-overlay",
+      "targets": [
+        ["css=.blue-background-overlay", "css:finder"],
+        ["xpath=//div[@id='__next']/header/div", "xpath:idRelative"],
+        ["xpath=//header/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4042afe9-e22f-48a2-85ca-050cee21db69",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > .flex",
+      "targets": [
+        ["css=a:nth-child(8) > .flex", "css:finder"],
+        ["xpath=//div[@id='__next']/main/div/div[2]/div/ul/a[8]/li", "xpath:idRelative"],
+        ["xpath=//a[8]/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "906a209e-ca4e-4c31-8ba1-b93f217e85d3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78e2a723-9785-478a-ab30-42941ed131a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(1) > .flex",
+      "targets": [
+        ["css=a:nth-child(1) > .flex", "css:finder"],
+        ["xpath=//div[@id='__next']/main/div/div[2]/div/ul/a/li", "xpath:idRelative"],
+        ["xpath=//a/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d04720fe-72cf-44a3-9fc0-580ae772c7d0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f72a3ba-feb3-42b7-b6a7-5d38e5763c0f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,104)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca8186e4-bcec-4436-8c65-e0394b58602b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cursor-pointer:nth-child(5) > .mr-3 > .text-center",
+      "targets": [
+        ["css=.cursor-pointer:nth-child(5) > .mr-3 > .text-center", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/nav/ul/li[5]/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/nav/ul/li[5]/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3b8a35dd-c2dd-479b-8410-c5068831653f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1148ed02-7b90-440d-b90e-bd747d3eb53e"]
+  }],
+  "urls": ["https://insat.rnu.tn/"],
+  "plugins": []
+}
